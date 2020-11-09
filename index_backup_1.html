@@ -34,12 +34,7 @@
                 </ul>
                 <!--start of login MODAL toggler-->
                 <span class="navbar-text">
-                    <!--
                     <a data-toggle="modal" data-target="#loginModal">
-                        <span class="fa fa-sign-in"></span> Login
-                    </a>
-                    -->
-                    <a id="loginButtons">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -192,8 +187,7 @@
                     <!--end of tooltip -->
                     
                     <!--start of reserveTable modal toggler-->
-                        <!-- <a class="btn btn-warning btn-sm btn-block" role="button" data-toggle="modal" data-target="#reserveTableModal">Reserve Table</a> -->
-                    <a class="btn btn-warning btn-sm btn-block" id="reserveButtons" role="button">Reserve Table</a>
+                    <a class="btn btn-warning btn-sm btn-block" role="button" data-toggle="modal" data-target="#reserveTableModal">Reserve Table</a>
                     <!--end of reserveTable modal toggler-->
                 </div>
             </div>
@@ -471,17 +465,6 @@
                     $("#carouselButton").children("span").removeClass('fa-play');
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
-            });
-            
-            
-            //reserve button without data-* attributes in <a> tag
-            $("#reserveButtons").click(function(){
-                $("#reserveTableModal").modal('toggle')
-            });
-
-            //reserve button without data-* attributes in <a> tag
-            $("#loginButtons").click(function(){
-                $("#loginModal").modal('toggle')
             });
         });       
     </script>
